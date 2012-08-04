@@ -293,7 +293,6 @@ def geocode_landnr(landnr):
     record['lat'] = latlng['lat']
     record['lng'] = latlng['lng']
     return record
-    return record
 
 
 
