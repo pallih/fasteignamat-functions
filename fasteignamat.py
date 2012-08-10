@@ -167,9 +167,13 @@ def fastanr_general_info(fastanr):
     html = r.content
     root = lxml.html.fromstring(html)
     xpath = '//table[@class="resulttable large"]//tbody/tr/.' #taflan med nidurstodum
+    xpath_address = '//div[@id="response"]/h2/text()'
+    address = root.xpath(xpath_address)
     table = root.xpath(xpath)
     record = {}
     record['fastanumer_org'] = fastanr
+    record['address'] = ' '.join(address[0].split())
+    
     for tr in table:
         try:
             if tr[0][0][2].text is not None:
