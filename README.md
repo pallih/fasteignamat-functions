@@ -23,6 +23,7 @@ Info returned:
     Fastanr - general info for fastanr:  201-9612
     Info from: http://skra.is/default.aspx?pageid=1000&streetname=201-9612
 
+    address: Vesturbrún 2
     fasteignamat : 18.500.000
     birtst : 75.9 m2
     fastanr : 201-9612
