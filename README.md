@@ -11,6 +11,12 @@ http://geo.skra.is/geoserver/vefur/heinum/HEINUM
 
 for this example = http://geo.skra.is/geoserver/vefur/heinum/1018969
 
+A alternate way of geocoding would be to fetch the json from ja.is. For this example (Vesturbrún 2):
+
+http://ja.is/kort/search_json/?q=Vesturbr%C3%BAn+2+104
+
+(Address + postcode)
+
 Info returned:
 
 
