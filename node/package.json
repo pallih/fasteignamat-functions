@@ -1,0 +1,14 @@
+{
+  "licence": "http://unlicense.org/",
+  "name": "fasteignamat",
+  "description" : "javascript version of fasteignamat.py @pallih",
+  "main": "fasteignamat.js",
+  "dependencies" : {
+    "cheerio": "0.10.x",
+    "request": "2.16.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZJONSSON/fasteignamat-functions"
+  }
+}
