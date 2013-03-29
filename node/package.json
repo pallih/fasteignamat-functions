@@ -5,10 +5,12 @@
   "main": "fasteignamat.js",
   "dependencies" : {
     "cheerio": "0.10.x",
-    "request": "2.16.x"
+    "request": "2.16.x",
+    "isn2wgs": "0.0.1"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/ZJONSSON/fasteignamat-functions"
-  }
+  },
+  "version": "0.0.2"
 }

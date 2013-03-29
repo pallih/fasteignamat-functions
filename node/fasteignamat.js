@@ -1,6 +1,6 @@
 var request = require("request"),
     cheerio = require("cheerio"),
-    isnet93_to_wgs84 = require("./isnet93_to_wgs84");
+    isn2wgs = require('isn2wgs');
 
 function general_info(fastanr,callback) {
   if (fastanr[3] && fastanr[3] !=='-') fastanr = fastanr.slice(0,3)+'-'+fastanr.slice(3);
@@ -72,10 +72,10 @@ function geocode(landnr,callback) {
     try {
       var ret = {};
       body = JSON.parse(body);
-      ret.center = isnet93_to_wgs84.apply(this,body.features[0].geometry.coordinates);
+      ret.center = isn2wgs.apply(this,body.features[0].geometry.coordinates);
       ret.bbox = [
-        isnet93_to_wgs84(body.bbox[0],body.bbox[1]),
-        isnet93_to_wgs84(body.bbox[2],body.bbox[3])
+        isn2wgs(body.bbox[0],body.bbox[1]),
+        isn2wgs(body.bbox[2],body.bbox[3])
       ];
       ret.properties = body.features[0].properties;
       callback(null,ret);
