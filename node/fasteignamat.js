@@ -72,7 +72,7 @@ function geocode(landnr,callback) {
     try {
       var ret = {};
       body = JSON.parse(body);
-      ret.center = isn2wgs(this,body.features[0].geometry.coordinates);
+      ret.center = isn2wgs.apply(this,body.features[0].geometry.coordinates);
       ret.bbox = [
         isn2wgs(body.bbox[0],body.bbox[1]),
         isn2wgs(body.bbox[2],body.bbox[3])
